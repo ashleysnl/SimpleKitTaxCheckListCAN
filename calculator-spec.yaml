@@ -1,0 +1,57 @@
+name: "Canadian Family Tax Custom Checklist"
+slug: "tax-checklist"
+repo_name: "simplekit-tax-checklist"
+subdomain: "tax-checklist"
+
+seo:
+  page_title: "Canadian Family Tax Checklist | Custom Tax Receipt & Slip Organizer | SimpleKit"
+  meta_description: "Organize tax season with a customizable Canadian family tax checklist. Track medical receipts, child care, T4 slips, notes, and contacts. Save and reload your checklist each year."
+  h1: "Canadian Family Tax Custom Checklist"
+
+calculator:
+  description: "A reusable Canadian family tax-season organizer for tracking receipts, slips, notes, contacts, and filing tasks year after year."
+  formula_notes: "This tool is a checklist planner, not a tax calculator."
+
+inputs:
+  - id: "familyName"
+    label: "Family or household name"
+    type: "text"
+  - id: "taxYearLabel"
+    label: "Tax year label"
+    type: "text"
+  - id: "notes"
+    label: "Planner notes"
+    type: "textarea"
+  - id: "search"
+    label: "Search checklist"
+    type: "search"
+  - id: "statusFilter"
+    label: "Status filter"
+    type: "select"
+
+outputs:
+  - id: "plannerSummary"
+    label: "Checklist summary"
+  - id: "categoryProgress"
+    label: "Category progress"
+  - id: "checklistSaveFile"
+    label: "Saved checklist file"
+
+content:
+  intro: "Keep all your family tax tasks in one place. Track slips, receipts, providers, child care, and custom reminders, then reuse your checklist every tax season."
+  result_explanation: "The app helps families organize medical receipts, child care records, T4 slips, donation receipts, RRSP paperwork, and filing admin with a fully editable nested checklist."
+
+faq:
+  - question: "Is this a tax calculator?"
+    answer: "No. It is a customizable organizer for tax-season tasks, receipts, slips, notes, and contacts."
+  - question: "Can I save this checklist for next year?"
+    answer: "Yes. You can save your planner as a checklist file and load it later, or clear checkmarks while keeping your custom structure."
+  - question: "What happens if browser storage breaks?"
+    answer: "The app fails gracefully, falls back to a safe default planner, and offers a reset action for corrupted localStorage."
+
+related_tools:
+  - "budgetPlanner"
+  - "rrsptfsaCalculator"
+  - "netWorthCalculator"
+
+disclaimer: "This planner is for organization only and does not provide tax, legal, or accounting advice."
