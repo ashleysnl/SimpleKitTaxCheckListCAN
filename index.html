@@ -28,7 +28,7 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "WebApplication",
       "name": "Canadian Family Tax Checklist",
       "applicationCategory": "FinanceApplication",
       "operatingSystem": "Web",
@@ -68,6 +68,46 @@
       supportPrimaryLabel: "Support SimpleKit",
       supportSecondaryLabel: "Browse SimpleKit tools"
     };
+  </script>
+  <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+          {
+              "@type": "Question",
+              "name": "Is this a tax calculator?",
+              "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. This tool is a customizable organizer for receipts, slips, contacts, and filing tasks. It helps you prepare, not calculate taxes owed."
+              }
+          },
+          {
+              "@type": "Question",
+              "name": "Can I reuse the checklist next year?",
+              "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Save your current planner as a checklist file, then load it later. You can also clear all checkmarks while keeping your custom categories, notes, and contact details."
+              }
+          },
+          {
+              "@type": "Question",
+              "name": "What can I track inside each item?",
+              "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Each item supports a title, checked state, notes, contact name, contact email, contact phone, tags, and nested sub-items for follow-up steps."
+              }
+          },
+          {
+              "@type": "Question",
+              "name": "What if my browser storage gets reset?",
+              "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Your active planner auto-saves in localStorage for convenience, but saving a checklist file is the best backup if you want something portable outside the browser."
+              }
+          }
+      ]
+  }
   </script>
 </head>
 <body>
