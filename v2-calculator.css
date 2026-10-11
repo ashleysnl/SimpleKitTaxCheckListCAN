@@ -1,0 +1,32 @@
+/* Checklist categories, progress, filters and saved/imported plans retain a settings sidebar and action controls. */
+.sk-v2[data-v2-calculator="canadian-tax-checklist"] {
+  --planner-accent:var(--v2-teal);
+  --planner-brand:var(--v2-blue);
+  --planner-brand-2:var(--v2-teal);
+  --planner-brand-deep:var(--v2-navy);
+  --planner-danger:var(--v2-error);
+  --planner-ink:var(--v2-navy);
+  --planner-line:var(--v2-border);
+  --planner-muted:var(--v2-slate);
+  --planner-radius:var(--v2-radius-card);
+  --planner-shadow:var(--v2-shadow-soft);
+  --planner-success:var(--v2-success);
+  --planner-surface:var(--v2-surface);
+  --planner-surface-soft:var(--v2-surface);
+}
+.sk-v2[data-v2-calculator="canadian-tax-checklist"] .v2c-main { row-gap:1.25rem; }
+.sk-v2[data-v2-calculator="canadian-tax-checklist"] .planner-grid { gap:1.25rem; }
+.sk-v2[data-v2-calculator="canadian-tax-checklist"] .summary-grid-compact { gap:.75rem; }
+.sk-v2[data-v2-calculator="canadian-tax-checklist"] .category-card,.sk-v2[data-v2-calculator="canadian-tax-checklist"] .checklist-item,.sk-v2[data-v2-calculator="canadian-tax-checklist"] .checklist-category,.sk-v2[data-v2-calculator="canadian-tax-checklist"] .settings-card,.sk-v2[data-v2-calculator="canadian-tax-checklist"] .state-pill-card { background:var(--v2-surface); border-color:var(--v2-border); border-radius:var(--v2-radius-sm); }
+.sk-v2[data-v2-calculator="canadian-tax-checklist"] .checklist-controls,.sk-v2[data-v2-calculator="canadian-tax-checklist"] .action-bar { flex-wrap:wrap; gap:.625rem; }
+@media(min-width:64rem) {
+ .sk-v2[data-v2-calculator="canadian-tax-checklist"] .planner-grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(16rem,.38fr); align-items:start; }
+}
+@media(max-width:63.99rem) {
+ .sk-v2[data-v2-calculator="canadian-tax-checklist"] .planner-grid { grid-template-columns:minmax(0,1fr); }
+ .sk-v2[data-v2-calculator="canadian-tax-checklist"] .summary-card-sticky { position:static; }
+}
+@media(max-width:47.99rem) {
+ .sk-v2[data-v2-calculator="canadian-tax-checklist"] :where(.form-grid,.field-grid,.advanced-grid,.input-grid,.salary-grid,.calculator-grid,.group-grid,.hero-grid,.settings-inline-grid) { grid-template-columns:minmax(0,1fr); }
+ .sk-v2[data-v2-calculator="canadian-tax-checklist"] :where(.form-actions,.toolbar-actions,.action-group,.wizard-actions,.backup-actions) { flex-wrap:wrap; }
+}
