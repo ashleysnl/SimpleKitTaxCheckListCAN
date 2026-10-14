@@ -121,11 +121,12 @@
 <a class="v2s-skip v2-button" href="#mainContent">Skip to content</a>
 <header class="v2s-header"><div class="v2s-wrap v2s-header-inner"><a class="v2s-brand" href="/" aria-label="SimpleKit home"><svg aria-hidden="true" focusable="false"><use href="https://core.simplekit.app/v2/icons/sprite.svg#calculator"></use></svg>SimpleKit</a><button type="button" class="v2s-menu" data-v2s-menu aria-controls="v2-canadian-tax-checklist-nav" aria-expanded="false" hidden>Menu</button><nav class="v2s-nav" id="v2-canadian-tax-checklist-nav" aria-label="Main navigation"><a href="/">Home</a><a href="/tools/" aria-current="page">Tools</a><a href="/learn/">Learn</a><a href="/about/">About</a><a href="/support/">Support</a></nav></div></header>
 
-  
+
 
   <div class="page-shell tax-checklist-shell">
-    <header class="hero hero-tax v2c-hero" aria-labelledby="pageTitle">
-      
+    <nav class="v2s-breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/tools/">Tools</a></li><li><span aria-current="page">Canadian Family Tax Checklist</span></li></ol></nav>
+<header class="hero hero-tax v2c-hero" aria-labelledby="pageTitle">
+
 
       <div class="hero-copy">
         <p class="eyebrow">Canadian Family Tax Planner</p>
@@ -135,14 +136,14 @@
           <a class="btn btn-primary" href="#plannerApp">Open checklist</a>
           <button class="btn btn-secondary" type="button" data-action="print-planner">Print planner</button>
         </div>
-        <div class="hero-trust-row" aria-label="Planner highlights">
+        <details class="v2c-context"><summary>About this tool</summary><div class="hero-trust-row" aria-label="Planner highlights">
           <span>Fully customizable</span>
           <span>Saved in your browser</span>
           <span>Save a backup file</span>
-        </div>
+        </div></details>
       </div>
 
-      <aside class="hero-side">
+      <details class="v2c-context"><summary>About this tool</summary><aside class="hero-side">
         <article class="hero-highlight">
           <span class="mini-kicker">Built for next year too</span>
           <strong>Load the same setup and start again</strong>
@@ -158,19 +159,11 @@
             <strong>Clear progress without losing structure</strong>
           </div>
         </div>
-      </aside>
+      </aside></details>
     </header>
 
   <main id="mainContent" class="page-flow v2c-main" tabindex="-1">
-      <section class="panel intro-panel intro-compact v2c-surface" aria-labelledby="introHeading">
-        <div class="panel-header compact-header">
-          <div>
-            <p class="section-kicker">Quick start</p>
-            <h2 id="introHeading">Save your recurring receipt sources once, then reuse them every tax season.</h2>
-          </div>
-          <p class="compact-proof">Most families edit this setup once, save a backup file, then clear checkmarks and reuse it next year.</p>
-        </div>
-      </section>
+
 
       <section id="plannerApp" class="panel planner-panel v2c-surface" aria-labelledby="plannerHeading">
         <div class="panel-header planner-heading">
@@ -383,8 +376,17 @@
       </section>
 
       <div data-simplekit-support></div>
-      
-    </main>
+
+    <section class="panel intro-panel intro-compact v2c-surface" aria-labelledby="introHeading">
+        <div class="panel-header compact-header">
+          <div>
+            <p class="section-kicker">Quick start</p>
+            <h2 id="introHeading">Save your recurring receipt sources once, then reuse them every tax season.</h2>
+          </div>
+          <p class="compact-proof">Most families edit this setup once, save a backup file, then clear checkmarks and reuse it next year.</p>
+        </div>
+      </section>
+</main>
   </div>
 
   <div id="confirmOverlay" class="modal-overlay" hidden>
@@ -409,9 +411,9 @@
     </div>
   </div>
 
-  <script src="./assets/js/simplekit-tool-links.js"></script>
-  <script type="module" src="https://core.simplekit.app/core.js"></script>
-  <script src="./assets/js/app.js" defer></script>
+<script src="./assets/js/simplekit-tool-links.js"></script>
+<script type="module" src="https://core.simplekit.app/core.js"></script>
+<script src="./assets/js/app.js" defer></script>
 
 <footer class="v2s-footer"><div class="v2s-wrap v2s-footer-inner"><div class="v2s-stack"><strong>SimpleKit</strong><p class="v2s-help">Free planning tools with clearer next steps.</p></div><div class="v2s-stack"><nav aria-label="Footer navigation"><a href="/tools/">Tools</a><a href="/learn/">Learn</a><a href="/methodology/">Methodology &amp; sources</a><a href="/privacy/">Privacy</a><a href="/support/">Support</a></nav><p class="v2s-help">Estimates for planning, not financial advice. Financial inputs stay in your browser; existing site analytics are described in our privacy policy.</p></div></div></footer>
 <script defer src="https://core.simplekit.app/v2/calculators.js"></script>
